@@ -1,0 +1,12 @@
+*.f90
+*.aux
+*.bbl
+*.blg
+*.out
+*.pdf
+*.png
+*.jpg
+*.eps
+*.svg
+*.jpeg
+*.zip
