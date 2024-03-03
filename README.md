@@ -21,26 +21,27 @@ This repository contains essential files for the submission process to the [Ciê
 
 ## Requirements:
 Depending on your preferred operating system, there are different requirements.
-### Unix-like users:
+### Unix-like distributions:
 - `pdfTeX` version 3.141592653-2.6-1.40.22 or newest.
 - `libcurl` version 7.81.0 or newest.
 - `unzip` version 6.00 or newest.
 
-### Windows users:
+### Windows:
 - `pdfTeX` version 3.141592653-2.6-1.40.22 or newest.
 - `PowerShell` in any version.
 
 ## Quick Start Guide:
-To generate a PDF containing a demo article, you need to follow a series of steps outlined in the `script.sh` or `script.ps1` file depending on your operating system. In summary, these scripts retrieves essential files from an external source and compiles the main PDF document. 
+To generate a PDF containing a demo article, you need to follow a series of steps outlined in the `script.sh` or `script.ps1` files depending on your operating system. In summary, these scripts retrieves essential files from an external source and compiles the main PDF document. 
 
-Therefore, first download the files by clicking [here](https://github.com/centraldeperiodicos/template_tex_ciencia_e_natura/archive/refs/heads/main.zip) and then extract everything. Alternatively, you can clone this repository. Regardless of the chosen option, navigate to the `cnc-paper` folder afterwards.
+Therefore, first download this project by clicking [here](https://github.com/centraldeperiodicos/template_tex_ciencia_e_natura/archive/refs/heads/main.zip) and then extract everything. Alternatively, you can clone this repository. Regardless of the chosen option, navigate to the `cnc-paper` folder afterwards.
 
 ```sh
 $ git clone git@github.com:centraldeperiodicos/template_tex_ciencia_e_natura.git
 $ cd cnc-paper
 ```
-Once again, for now on the folowing steps are besed on your operating system. Every command below must be executed or terminal or command prompt.
-### Unix-like users:
+Once again, for now on the folowing steps are besed on your operating system. Every command below must be executed or terminal or command prompt in the root folder.
+
+### Unix-like distributions:
 
 For first-time use of the files in this project, it is necessary to turn the `script.sh` executable.
 ```sh
@@ -51,7 +52,7 @@ Once done, run the script as shown:
 $ ./script.sh
 ```
 
-### Windows users:
+### Windows:
 Just run the PowerShell this way:
 ```
 $ PowerShell.exe -File ./script.ps1
