@@ -32,7 +32,7 @@ Dependendo do seu sistema operacional preferido, existem diferentes requisitos.
 - `PowerShell` em qualquer versão.
 
 ## Guia de início rápido:
-Para gerar um PDF com um artigo de demonstração, é necessário seguir alguns passos a serem realizados pelos arquivos `script.sh` ou `script.ps1` dependendo do seu sistema operacional. Em resumo, este script se encarrega de obter alguns arquivos fundamentais de uma fonte externa e produz o documento principal em PDF.
+Para gerar um PDF com um artigo de demonstração, é necessário seguir alguns passos a serem realizados pelos arquivos `script.sh` ou `script.ps1` dependendo do seu sistema operacional. Em resumo, estes scripts se encarregam de obter alguns arquivos fundamentais de uma fonte externa e produzem o documento principal em PDF.
 
 Para isto, primeiro baixe este projeto clicando [aqui](https://github.com/centraldeperiodicos/template_tex_ciencia_e_natura/archive/refs/heads/main.zip) e, em seguida, extraia tudo. Alternativamente, clone este repositório. Independentemente da opção escolhida, navegue até a pasta `cnc-paper` em seguida.
 
