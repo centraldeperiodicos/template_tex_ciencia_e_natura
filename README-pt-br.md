@@ -20,12 +20,19 @@
 Este repositório contém arquivos essenciais para o processo de submissão ao [periódico da Ciência e Natura](https://periodicos.ufsm.br/cienciaenatura/). Diretrizes completas para publicação estão disponíveis [aqui](https://periodicos.ufsm.br/cienciaenatura/about/submissions).
 
 ## Requerimentos:
-- Este template foi projetado para funcionar apenas em máquinas com distribuições Linux.
-- Certifique-se de ter o `pdfTeX` instalado.
-- Você deve ter o `unzip package` instalado.
+Dependendo do seu sistema operacional preferido, existem diferentes requisitos.
+
+### Distribuições Unix:
+- `pdfTeX` versão 3.141592653-2.6-1.40.22 ou mais recente.
+- `libcurl` versão 7.81.0 ou mais recente.
+- `unzip` versão 6.00 ou mais recente.
+
+### Windows:
+- `pdfTeX` versão 3.141592653-2.6-1.40.22 ou mais recente.
+- `PowerShell` em qualquer versão.
 
 ## Guia de início rápido:
-Para gerar um PDF com um artigo de demonstração, é necessário seguir alguns passos a serem realizados pelo arquivo `script.sh`. Em resumo, este script se encarrega de obter alguns arquivos fundamentais de uma fonte externa e produz o documento principal em PDF.
+Para gerar um PDF com um artigo de demonstração, é necessário seguir alguns passos a serem realizados pelo arquivo `script.sh` ou `script.ps1` dependendo do seu sistema operacional. Em resumo, este script se encarrega de obter alguns arquivos fundamentais de uma fonte externa e produz o documento principal em PDF.
 
 Para isto, primeiro baixe os arquivos deste repositório clicando [aqui](https://github.com/centraldeperiodicos/template_tex_ciencia_e_natura/archive/refs/heads/main.zip) e, em seguida, extraia tudo. Alternativamente, clone este repositório. Independentemente da opção escolhida, navegue até a pasta `cnc-paper` em seguida.
 
@@ -33,7 +40,10 @@ Para isto, primeiro baixe os arquivos deste repositório clicando [aqui](https:/
 $ git clone git@github.com:centraldeperiodicos/template_tex_ciencia_e_natura.git
 $ cd cnc-paper
 ```
-Para usar os arquivos neste projeto pela primeira vez, é necessário tornar o `script.sh` executável.
+### Distribuições Unix:
+
+Para usar os arquivos neste projeto pela primeira vez, é necessário tornar o `script.sh` executável. Todo comando abaixo precisa ser executado no terminal ou no prompt de comando dentro da pasta raiz.
+
 ```sh
 $ chmod +x script.sh
 ```
@@ -41,7 +51,14 @@ Após isto, execute o script para gerar o PDF.
 ```sh
 $ ./script.sh
 ```
-Se tudo correr bem, o arquivo `paper.pdf` aparecerá no diretório raiz.<br>
+
+### Windows:
+Apenas execute o PowerShell desta forma:
+```
+$ PowerShell.exe -File ./script.ps1
+```
+
+Independentemente do sistema operacional utilizado. Se tudo correr bem, o arquivo `paper.pdf` aparecerá no diretório raiz.<br>
 
 >Este script faz o download de um arquivo zipado de uma plataforma de terceiros, contendo imagens essenciais para o periódico, além de outras que fazem parte do artigo para fins de demonstração. Sinta-se à vontade para fazer as alterações necessárias para criar sua própria versão. O arquivo `paper.tex` fornece instruções adicionais para isso.
 
