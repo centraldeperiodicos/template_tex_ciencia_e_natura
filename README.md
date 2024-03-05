@@ -55,7 +55,7 @@ $ ./script.sh
 ### Windows:
 Just run the PowerShell this way:
 ```
-$ PowerShell.exe -File ./script.ps1
+$ PowerShell.exe -ExecutionPolicy UnRestricted -File ./script.ps1
 ```
 
 Regardless of your operating system used, if everything works well, the `paper.pdf` file will be created in the root directory.
