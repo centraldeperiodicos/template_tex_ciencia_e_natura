@@ -55,7 +55,7 @@ $ ./script.sh
 ### Windows:
 Apenas execute o PowerShell desta forma:
 ```
-$ PowerShell.exe -File ./script.ps1
+$ PowerShell.exe -ExecutionPolicy UnRestricted -File ./script.ps1
 ```
 
 Independentemente do sistema operacional utilizado. Se tudo correr bem, o arquivo `paper.pdf` aparecerá no diretório raiz.<br>
