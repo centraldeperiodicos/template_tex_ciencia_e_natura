@@ -32,7 +32,7 @@ Dependendo da plataforma que usará para escrever seu artigo, haverão diferente
 Além disso, intependentemente do sistema operação de uso, você deverá ter o TeX Live 2022 (ou mais) recente instalado. Entretanto, este requisito não se aplica se você quiser utilizar a plataforma do [Overleaf](https://www.overleaf.com/).
 
 ## Guia de início rápido:
-Antes de gerar o artigo de demonstração, você precisa obter alguns arquivos essenciais de uma fonte externa. Você pode tanto baixar manualmente os arquivos a partir de links no arquivo `cen_config.ini` e então extraí-los nas pastas `author_files` e `ciencia_e_natura_images`, ou rodar um script disponibilizado neste repositório. Neste caso, há uma série de passos detalhados nos arquivos `download-script.sh` ou `download-script.ps1`, que dependem do seu sistema operacional para execuão. 
+Antes de gerar o artigo de demonstração, você precisa obter alguns arquivos essenciais de uma fonte externa. Você pode tanto baixar manualmente os arquivos a partir de links no arquivo `cen_config.ini` e então extraí-los nas pastas `author_files` e `ciencia_e_natura_images`, ou rodar um script disponibilizado neste repositório. Neste caso, há uma série de passos detalhados nos arquivos `download-script.sh` ou `download-script.ps1`, que dependem do seu sistema operacional para execução. 
 
 Para isto, baixe este projeto clicando [aqui](https://github.com/centraldeperiodicos/template_tex_ciencia_e_natura/archive/refs/heads/main.zip) e extraia tudo. Alternativamente, você pode clonar este repositório. Qualquer que seja a opção escolhida, navegue até a pasta `template_tex_ciencia_e_natura` depois disso.
 
