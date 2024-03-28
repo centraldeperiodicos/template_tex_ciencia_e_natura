@@ -66,7 +66,7 @@ $ latexmk paper.tex
 ```
 Se você prefirir, utilizar o [Overleaf](https://www.overleaf.com), faça o upload de todos os arquivos, inclusive os baixados pelos scripts e compile o PDF usando seu serviço de plataforma em nuvem.
 
-Qualquer quee seja o método escolhido, se tudo ocorrer bem, o arquivo `paper.pdf` aparecerá.
+Qualquer que seja o método escolhido, se tudo ocorrer bem, o arquivo `paper.pdf` aparecerá.
 A partir daqui, tudo que precisará fazer é editar os arquivos para criar sua própria versão do artigo ao compilar quantas vezes você precisar.
 
 ## Submissão:
