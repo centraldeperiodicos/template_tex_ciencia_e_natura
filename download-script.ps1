@@ -8,14 +8,3 @@ $journalFileUrl = [regex]::matches($config.ciencia_e_natura_url_files, '(?<=\").
 $downloader = [FileDownloader]::new()
 $downloader.downloadFile($authorFileUrl, "author_files")
 $downloader.downloadFile($journalFileUrl, "ciencia_e_natura_images")
-
-function cleanupFiles {
-    Remove-Item -Path "*.blg","*.log","*.spl","*.aux","*.out","*.bbl" -Force
-}
-
-pdflatex paper.tex
-bibtex paper
-pdflatex paper.tex
-pdflatex paper.tex
-
-cleanupFiles
