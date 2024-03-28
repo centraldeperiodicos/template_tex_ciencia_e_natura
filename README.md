@@ -1,4 +1,4 @@
-<p align="center">
+Depending on the platform you use to write your paper, there will be different steps to follow. The requirements in each case are as detailed below.<p align="center">
    <img alt="CienciaENaturaLogo" src="https://dl.dropboxusercontent.com/s/2y3obtp1dcg0h0ub3mab6/logo-ciencia-e-natura.jpg?rlkey=77vnaywv3t5oydoiqclnfu736&dl=0" width="70%">
     <br>
     <img alt="Issues" src="https://img.shields.io/github/issues/lobophf/conway-game-of-life.svg">
@@ -17,55 +17,65 @@
 </p>
 
 ## About:
-This repository contains essential files for the submission process to the [Ciência e Natura journal](https://periodicos.ufsm.br/cienciaenatura/). The guidelines for publication are available [here](https://periodicos.ufsm.br/cienciaenatura/about/submissions).
+This repository contains the `LaTeX` version of essential files needed for the submission process to the [Ciência e Natura journal](https://periodicos.ufsm.br/cienciaenatura/). The guidelines for publication are available [here](https://periodicos.ufsm.br/cienciaenatura/about/submissions).
 
 ## Requirements:
-Depending on your preferred operating system, there are different requirements.
+Depending on the platform you use to write your paper, there will be different steps to follow. The requirements in each case are as detailed below.
+
 ### Unix-like distributions:
-- `pdfTeX` version 3.141592653-2.6-1.40.22 or newest.
-- `libcurl` version 7.81.0 or newest.
-- `unzip` version 6.00 or newest.
+- `libcurl` version 7.81.0 or newer.
+- `unzip` version 6.00 or newer.
 
 ### Windows:
-- `pdfTeX` version 3.141592653-2.6-1.40.22 or newest.
 - `PowerShell` in any version.
 
-## Quick Start Guide:
-To generate a PDF containing a demo article, you need to follow a series of steps outlined in the `script.sh` or `script.ps1` files depending on your operating system. In summary, these scripts retrieves essential files from an external source and compiles the main PDF document. 
+In addition, whichever operating system you use, you must have TeX Live 2022 or newer installed. However, this requirement does not apply if you want to use the [Overleaf](https://www.overleaf.com/) platform.
 
-Therefore, first download this project by clicking [here](https://github.com/centraldeperiodicos/template_tex_ciencia_e_natura/archive/refs/heads/main.zip) and then extract everything. Alternatively, you can clone this repository. Regardless of the chosen option, navigate to the `cnc-paper` folder afterwards.
+## Quick Start Guide:
+Before generating the demo paper, you need to retrieve essential files from an external source. You can either manually download the files from the links in the `cen_config.ini` file and then unzip them into the `author_files` and `ciencia_e_natura_images` folders, or run a script provided in this repository. In this case a series of steps outlined in the `download-script.sh` or `download-script.ps1` files depending on your operating system.
+
+Therefore, download this project by clicking [here](https://github.com/centraldeperiodicos/template_tex_ciencia_e_natura/archive/refs/heads/main.zip) and then extract everything. Alternatively, you can clone this repository. Regardless of the chosen option, navigate to the `template_tex_ciencia_e_natura` folder afterwards.
 
 ```sh
 $ git clone git@github.com:centraldeperiodicos/template_tex_ciencia_e_natura.git
-$ cd cnc-paper
+$ cd template_tex_ciencia_e_natura
 ```
-Once again, for now on the folowing steps are besed on your operating system. Every command below must be executed or terminal or command prompt in the root folder.
+From this point on, follow the steps based on your operating system. For that, execute the commands below in either the terminal or command prompt in the root folder.
 
 ### Unix-like distributions:
 
-For first-time use of the files in this project, it is necessary to turn the `script.sh` executable.
+For first-time use of the files in this project, it is necessary to turn the `download-script.sh` file executable.
 ```sh
-$ chmod +x script.sh
+$ chmod +x download-script.sh
 ```
 Once done, run the script as shown:
 ```sh
-$ ./script.sh
+$ ./download-script.sh
 ```
 
 ### Windows:
 Just run the PowerShell this way:
 ```
-$ PowerShell.exe -ExecutionPolicy Bypass -File ./script.ps1
+$ PowerShell.exe -ExecutionPolicy Bypass -File ./download-script.ps1
 ```
+### Compiling the PDF:
 
-Regardless of your operating system used, if everything works well, the `paper.pdf` file will be created in the root directory.
+For those working on local machines using any Operating System, use the following command to compile the PDF.
+```
+$ latexmk paper.tex
+```
+If you prefer to use [Overleaf](https://www.overleaf.com), upload all files from this repository along with the downloaded ones and compile the PDF using their platform's cloud service.
 
-> [!NOTE]
->This script downloads a zipped file from a third-party platform, containing images essential to the journal, as well as others that are part of the paper for demonstration purposes. Feel free to change whatever is needed to create your own version. The `paper.tex` file provides additional instructions for this.
+Whichever method you choose, if everything works well, the `paper.pdf` file will be available.
+From now on, all you have to do is edit the files to create your own version of the paper by compiling as many times you want.
 
 ## Submission:
-Before proceeding with submission, review our [Submission Preparation Checklist](https://periodicos.ufsm.br/cienciaenatura/about/submissions) and provide all necessary files on our platform, including the generated PDF file.
+Before proceeding with submission, review our [Submission Preparation Checklist](https://periodicos.ufsm.br/cienciaenatura/about/submissions) and provide all required files on our platform, including the generated PDF file.
+
+Also, consider running the following command to remove unnecessary files before uploading to our platform. Keep in mind many of these log or auxiliary files are only useful during the project editing phase.
+```
+$ latexmk -c
+```
 
 ## License:
 This project is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-sa/4.0/), as found in the [LICENSE](./LICENSE) file.
-
