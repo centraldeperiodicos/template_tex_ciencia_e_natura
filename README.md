@@ -1,4 +1,4 @@
-Depending on the platform you use to write your paper, there will be different steps to follow. The requirements in each case are as detailed below.<p align="center">
+<p align="center">
    <img alt="CienciaENaturaLogo" src="https://dl.dropboxusercontent.com/s/2y3obtp1dcg0h0ub3mab6/logo-ciencia-e-natura.jpg?rlkey=77vnaywv3t5oydoiqclnfu736&dl=0" width="70%">
     <br>
     <img alt="Issues" src="https://img.shields.io/github/issues/lobophf/conway-game-of-life.svg">
