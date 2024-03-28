@@ -17,53 +17,66 @@
 </p>
 
 ## Sobre:
-Este repositório contém arquivos essenciais para o processo de submissão ao [periódico da Ciência e Natura](https://periodicos.ufsm.br/cienciaenatura/). Diretrizes completas para publicação estão disponíveis [aqui](https://periodicos.ufsm.br/cienciaenatura/about/submissions).
+Este repositório contém a versão LaTex de arquivos essenciais para o processo de submissão ao [periódico da Ciência e Natura](https://periodicos.ufsm.br/cienciaenatura/). As diretrizes completas para publicação estão disponíveis [aqui](https://periodicos.ufsm.br/cienciaenatura/about/submissions).
 
 ## Requerimentos:
-Dependendo do seu sistema operacional preferido, existem diferentes requisitos.
+Dependendo da plataforma que usará para escrever seu artigo, haverão diferentes passos para seguir. Os requisitos em cada caso estão detalhados abaixo.
 
 ### Distribuições Unix:
-- `pdfTeX` versão 3.141592653-2.6-1.40.22 ou mais recente.
 - `libcurl` versão 7.81.0 ou mais recente.
 - `unzip` versão 6.00 ou mais recente.
 
 ### Windows:
-- `pdfTeX` versão 3.141592653-2.6-1.40.22 ou mais recente.
 - `PowerShell` em qualquer versão.
 
-## Guia de início rápido:
-Para gerar um PDF com um artigo de demonstração, é necessário seguir alguns passos a serem realizados pelos arquivos `script.sh` ou `script.ps1` dependendo do seu sistema operacional. Em resumo, estes scripts se encarregam de obter alguns arquivos fundamentais de uma fonte externa e produzem o documento principal em PDF.
+Além disso, intependentemente do sistema operação de uso, você deverá ter o TeX Live 2022 (ou mais) recente instalado. Entretanto, este requisito não se aplica se você quiser utilizar a plataforma do [Overleaf](https://www.overleaf.com/).
 
-Para isto, primeiro baixe este projeto clicando [aqui](https://github.com/centraldeperiodicos/template_tex_ciencia_e_natura/archive/refs/heads/main.zip) e, em seguida, extraia tudo. Alternativamente, clone este repositório. Independentemente da opção escolhida, navegue até a pasta `cnc-paper` em seguida.
+## Guia de início rápido:
+Antes de gerar o artigo de demonstração, você precisa obter alguns arquivos essenciais de uma fonte externa. Você pode tanto baixar manualmente os arquivos a partir de links no arquivo `cen_config.ini` e então extraí-los nas pastas `author_files` e `ciencia_e_natura_images`, ou rodar um script disponibilizado neste repositório. Neste caso, uma série de passos detalhados nos arquivos `download-script.sh` ou `download-script.ps1`, dependendo do seu sistema operacional. 
+
+Para isto, baixe este projeto clicando [aqui](https://github.com/centraldeperiodicos/template_tex_ciencia_e_natura/archive/refs/heads/main.zip) e extraia tudo. Alternativamente, você pode clonar este repositório. Qualquer que seja a opção escolhida, navegue até a pasta `template_tex_ciencia_e_natura` depois disso.
 
 ```sh
 $ git clone git@github.com:centraldeperiodicos/template_tex_ciencia_e_natura.git
-$ cd cnc-paper
+$ cd template_tex_ciencia_e_natura
 ```
+Deste ponto em diante, siga os passos adequados para seu sistema operacional. Para isto, execute os comandos abaixo no terminal ou no prompt dentro da pasta raiz.
+
 ### Distribuições Unix:
 
-Para usar os arquivos neste projeto pela primeira vez, é necessário tornar o `script.sh` executável. Todo comando abaixo precisa ser executado no terminal ou no prompt de comando dentro da pasta raiz.
+Para primeiro uso desse projeto, é necessário tornar o arquivo `download-script.sh` executável.
 
 ```sh
-$ chmod +x script.sh
+$ chmod +x download-script.sh
 ```
-Após isto, execute o script para gerar o PDF.
+Uma vez feito, execute o script como mostrado:
 ```sh
-$ ./script.sh
+$ ./download-script.sh
 ```
 
 ### Windows:
-Apenas execute o PowerShell desta forma:
+Apenas execute o PowerShell dessa forma:
 ```
-$ PowerShell.exe -ExecutionPolicy Bypass -File ./script.ps1
+$ PowerShell.exe -ExecutionPolicy Bypass -File ./download-script.ps1
 ```
+### Compilando o PDF:
+Para aqueles que trabalham em máquinas locais utilizando qualquer sistema operacional, utilize os seguintes comands para compilar o PDF.
+```
+$ latexmk paper.tex
+```
+Se você prefirir, utilizar o [Overleaf](https://www.overleaf.com), faça o upload de todos os arquivos, inclusive os baixados pelos scripts e compile o PDF usando seu serviço de plataforma em nuvem.
 
-Independentemente do sistema operacional utilizado. Se tudo correr bem, o arquivo `paper.pdf` aparecerá no diretório raiz.<br>
-
->Este script faz o download de um arquivo zipado de uma plataforma de terceiros, contendo imagens essenciais para o periódico, além de outras que fazem parte do artigo para fins de demonstração. Sinta-se à vontade para fazer as alterações necessárias para criar sua própria versão. O arquivo `paper.tex` fornece instruções adicionais para isso.
+Qualquer quee seja o método escolhido, se tudo ocorrer bem, o arquivo `paper.pdf` aparecerá.
+A partir daqui, tudo que precisará fazer é editar os arquivos para criar sua própria versão do artigo ao compilar quantas vezes você precisar.
 
 ## Submissão:
 Antes de prosseguir com a submissão, revise nossa [Lista de Verificação de Preparação para Submissão](https://periodicos.ufsm.br/cienciaenatura/about/submissions) e forneça todos os arquivos necessários em nossa plataforma, incluindo o arquivo PDF gerado.
 
+Também considere executar o comando a seguir para remover arquivos desnecessários antes de enviar os arquivos para nossa plataforma. Tenha em mende que muitos desses arquivos de log ou arquivos auxilires são úteis somente na fase de edição do projeto.
+
+```
+$ latexmk -c
+```
 ## License:
 Este projeto está licenciado sob a [Licença Internacional Creative Commons Attribution-NonCommercial-ShareAlike 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/), conforme encontrado no arquivo [LICENSE](./LICENSE).
+
