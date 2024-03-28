@@ -64,7 +64,7 @@ Para aqueles que trabalham em máquinas locais utilizando qualquer sistema opera
 ```
 $ latexmk paper.tex
 ```
-Se você prefirir, utilizar o [Overleaf](https://www.overleaf.com), faça o upload de todos os arquivos, inclusive os baixados pelos scripts e compile o PDF usando seu serviço de plataforma em nuvem.
+Se você preferir, utilizar o [Overleaf](https://www.overleaf.com), faça o upload de todos os arquivos, inclusive os baixados pelos scripts e compile o PDF usando seu serviço de plataforma em nuvem.
 
 Qualquer que seja o método escolhido, se tudo ocorrer bem, o arquivo `paper.pdf` aparecerá.
 A partir daqui, tudo que precisará fazer é editar os arquivos para criar sua própria versão do artigo, compilando quantas vezes você precisar.
@@ -72,7 +72,7 @@ A partir daqui, tudo que precisará fazer é editar os arquivos para criar sua p
 ## Submissão:
 Antes de prosseguir com a submissão, revise nossa [Lista de Verificação de Preparação para Submissão](https://periodicos.ufsm.br/cienciaenatura/about/submissions) e forneça todos os arquivos necessários em nossa plataforma, incluindo o arquivo PDF gerado.
 
-Também considere executar o comando a seguir para remover arquivos desnecessários antes de enviar os arquivos para nossa plataforma. Tenha em mende que muitos desses arquivos de log ou arquivos auxilires são úteis somente na fase de edição do projeto.
+Também considere executar o comando a seguir para remover arquivos desnecessários antes de enviar os arquivos para nossa plataforma. Tenha em mente que muitos desses arquivos de log ou arquivos auxiliares são úteis somente na fase de edição do projeto.
 
 ```
 $ latexmk -c
