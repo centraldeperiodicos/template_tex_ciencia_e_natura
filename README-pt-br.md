@@ -62,7 +62,7 @@ $ PowerShell.exe -ExecutionPolicy Bypass -File ./download-script.ps1
 ### Compilando o PDF:
 Para aqueles que trabalham em máquinas locais utilizando qualquer sistema operacional, utilize os seguintes comands para compilar o PDF.
 ```
-$ latexmk paper.tex
+$ latexmk -pdf paper.tex
 ```
 Se você preferir, utilizar o [Overleaf](https://www.overleaf.com), faça o upload de todos os arquivos, inclusive os baixados pelos scripts e compile o PDF usando seu serviço de plataforma em nuvem.
 

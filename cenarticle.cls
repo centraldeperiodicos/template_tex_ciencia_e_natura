@@ -102,11 +102,11 @@
 \newcommand{\cncoverheader}{
  \noindent\begin{tikzpicture}[overlay]
     \begin{scope}[shift={(0,-10mm)}]
-      \node[anchor=south west,inner sep=0mm] at (0, 0) {\includegraphics[height=27.5mm]{ciencia_e_natura_images/logo-ufsm.png}};
-      \node[anchor=south,inner sep=0mm] at (\textwidth/2, 7mm) {\includegraphics[width=91.3mm]{ciencia_e_natura_images/logo-ciencia-e-natura.jpg}};
-      \node[anchor=south east, inner sep=0mm] at (\textwidth, 9mm) {\includegraphics[height=22.6mm]{ciencia_e_natura_images/revista.jpg}};
+      \node[anchor=south west,inner sep=0mm] at (0, 0) {\includegraphics[bb= 0 0 280 467, height=27.5mm]{ciencia_e_natura_images/logo-ufsm.png}};
+      \node[anchor=south,inner sep=0mm] at (\textwidth/2, 7mm) {\includegraphics[bb=0 0 577 117, width=91.3mm]{ciencia_e_natura_images/logo-ciencia-e-natura.jpg}};
+      \node[anchor=south east, inner sep=0mm] at (\textwidth, 9mm) {\includegraphics[bb=0 0 2516 3579, height=22.6mm]{ciencia_e_natura_images/revista.jpg}};
       \node[left, anchor=east, inner sep = 0mm] at (\textwidth, 6mm) {\fontsize{8pt}{2pt}\selectfont ISSN \issn};
-      \node[left, anchor=east, inner sep = 0mm] at (\textwidth, 1.5mm) {\includegraphics[height=4.5mm]{\openacessfile}};
+      \node[left, anchor=east, inner sep = 0mm] at (\textwidth, 1.5mm) {\includegraphics[bb=0 0 454 97, height=4.5mm]{\openacessfile}};
 
       \draw[line width=1.0pt, cncolor] (-20mm, -1.5mm) -- (\paperwidth, -1.5mm);
       \draw node[anchor=north, inner sep=2.5mm] at (\textwidth / 2, 0) {\fontsize{8pt}{2pt}\selectfont  Ci. e Nat., Santa Maria, v. \volume, \eJournal, 2022 \textbullet~\doi};
@@ -199,7 +199,7 @@
       \noindent\begin{tikzpicture}[overlay]
         \begin{scope}[shift={(0,7mm)}]
           \draw[line width=1.0pt, cncolor] (0, 0) -- (\textwidth, 0);
-          \node[anchor=north west,inner sep=0mm] at (0, -1.5mm) {\includegraphics[width=17.4mm]{ciencia_e_natura_images/creativecommons.png}};
+          \node[anchor=north west,inner sep=0mm] at (0, -1.5mm) {\includegraphics[bb=0 0 88 31, width=17.4mm]{ciencia_e_natura_images/creativecommons.png}};
           \node[anchor=west, inner sep=0mm] at (20mm, -4.8mm) {\scriptsize\selectfont \creativecommonstext};
         \end{scope}
       \end{tikzpicture}
