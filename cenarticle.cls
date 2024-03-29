@@ -58,7 +58,6 @@
 \RequirePackage[fleqn]{amsmath}
 \setlength{\mathindent}{0pt}
 
-%
 \pagestyle{fancy} % All pages have headers and footers
 \setlength{\headheight}{10mm}
 \setlength{\headsep}{5mm} 
