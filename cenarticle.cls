@@ -54,6 +54,10 @@
 \RequirePackage{titlesec}
 
 \RequirePackage{caption}
+
+\RequirePackage[fleqn]{amsmath}
+\setlength{\mathindent}{0pt}
+
 %
 \pagestyle{fancy} % All pages have headers and footers
 \setlength{\headheight}{10mm}
@@ -312,20 +316,22 @@
   \setcounter{authorscounter}{1}
 
   \newcommand{\authorrules}[5]{
-    {\setlength{\parindent}{0pt}
+    \setlength{\parindent}{0pt}
+    \setstretch{1.2}
+    {
       {\bf\theauthorscounter~--~#1}\\
       {\fontsize{11pt}{0pt}
       #2\\
       {\ifthenelse{\equal{#3}{}}{}{#3 \textbullet}}~#4\\
-    \if@english
-      Contribution: #5
-    \else
-      Contribuição: #5
-    \fi  
-    }\\[3mm]
+      \if@english
+        Contribution: #5
+      \else
+        Contribuição: #5
+      \fi  
+      }\\[3mm]
+    }
+    \stepcounter{authorscounter}
   }
-  \stepcounter{authorscounter}
-}
 
 \newcommand{\theauthorcontributions}[1]{
   \vspace{-2mm}
