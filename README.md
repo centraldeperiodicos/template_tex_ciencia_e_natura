@@ -1,5 +1,5 @@
 <p align="center">
-   <img alt="CienciaENaturaLogo" src="https://dl.dropboxusercontent.com/s/2y3obtp1dcg0h0ub3mab6/logo-ciencia-e-natura.jpg?rlkey=77vnaywv3t5oydoiqclnfu736&dl=0" width="70%">
+   <img alt="CienciaENaturaLogo" src="https://dl.dropboxusercontent.com/s/mfizrve2uyx9hu8ci8ldf/ciencia_e_natura.png?rlkey=td68joh9ji0hmqynz1jtiueio&dl=0" width="70%">
     <br>
     <img alt="Issues" src="https://img.shields.io/github/issues/centraldeperiodicos/template_tex_ciencia_e_natura.svg">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/centraldeperiodicos/template_tex_ciencia_e_natura">
@@ -19,7 +19,12 @@
 This repository contains the `LaTeX` version of essential files needed for the submission process to the [Ciência e Natura Journal](https://periodicos.ufsm.br/cienciaenatura/).
 
 ## For&nbsp;authors:
-If you are planning to submit a paper to our journal, please read the [guidelines](https://periodicos.ufsm.br/cienciaenatura/about/submissions) and download the essential files by clicking [here](https://github.com/centraldeperiodicos/template_tex_ciencia_e_natura/releases/download/release/main-2024-002.zip).
+If you are planning to submit a paper to our journal, please read the [guidelines](https://periodicos.ufsm.br/cienciaenatura/about/submissions) and download the essential files by clicking on the following button.
+<p align="center">
+   <a href="https://github.com/centraldeperiodicos/template_tex_ciencia_e_natura/releases/download/release/main-2024-002.zip">
+      <img alt="CienciaENaturaLogo" src="https://dl.dropboxusercontent.com/s/11m3n0mei8yjrqjpa030s/download_button.svg?rlkey=bckpldci098xfvxbowr64f3bv&dl=0" width="200px">
+   </a>
+</p>
 
 ### Requirements:
 
