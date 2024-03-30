@@ -1,82 +1,49 @@
 <p align="center">
    <img alt="CienciaENaturaLogo" src="https://dl.dropboxusercontent.com/s/2y3obtp1dcg0h0ub3mab6/logo-ciencia-e-natura.jpg?rlkey=77vnaywv3t5oydoiqclnfu736&dl=0" width="70%">
     <br>
-    <img alt="Issues" src="https://img.shields.io/github/issues/lobophf/conway-game-of-life.svg">
+    <img alt="Issues" src="https://img.shields.io/github/issues/centraldeperiodicos/template_tex_ciencia_e_natura.svg">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/centraldeperiodicos/template_tex_ciencia_e_natura">
     <img alt="License" src="https://img.shields.io/badge/license-CC%20BY--NC--SA%204.0%20Deed-brightgreen"><br>
     <a href="README.md">:us: English</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;
     <a href="README-pt-br.md">:brazil: Português</a>&nbsp;&nbsp;&nbsp;
     <br> 
     <a href="#sobre">Sobre</a>&nbsp;&nbsp;|&nbsp;
-    <a href="#requerementos">Requerimentos</a>&nbsp;&nbsp;|&nbsp;
-    <a href="#guia de início rapido">Guia de início rápido</a>&nbsp;&nbsp;|&nbsp;
-    <a href="#submissão">Submissão</a>&nbsp;&nbsp;|&nbsp;
-    <a href="#licença">Licença</a>
+    <a href="#paraautores">Para autores</a>&nbsp;&nbsp;|&nbsp;
+    <a href="#contribuição">Contribuição</a>&nbsp;&nbsp;|&nbsp;
+    <a href="#license">License</a>	
     <h2 align="center">Ciência e Natura - Repositório LaTeX</h2>
     <h4 align="center">Universidade Federal de Santa Maria, Campus Sede, Editora Central de Periódicos da UFSM</h4>
 </p>
 
 ## Sobre:
-Este repositório contém a versão LaTex de arquivos essenciais para o processo de submissão ao [periódico da Ciência e Natura](https://periodicos.ufsm.br/cienciaenatura/). As diretrizes completas para publicação estão disponíveis [aqui](https://periodicos.ufsm.br/cienciaenatura/about/submissions).
+Este repositório contém os arquivos LaTeX essenciais necessários para o processo de submissão ao [periódico da Ciência e Natura](https://periodicos.ufsm.br/cienciaenatura/).
 
-## Requerimentos:
-Dependendo da plataforma que usará para escrever seu artigo, haverão diferentes passos para seguir. Os requisitos em cada caso estão detalhados abaixo.
+## Para&nbsp;autores:
+Se você planeja enviar um artigo para nossa revista, por favor, leia as [diretrizes](https://periodicos.ufsm.br/cienciaenatura/about/submissions) e baixe os arquivos essenciais clicando [aqui](https://github.com/centraldeperiodicos/template_tex_ciencia_e_natura/releases/download/2024-001/main-2024-001.zip).
 
-### Distribuições Unix:
-- `libcurl` versão 7.81.0 ou mais recente.
-- `unzip` versão 6.00 ou mais recente.
+### Requisitos:
+Se você deseja criar seu artigo em sua máquina local, deve ter o `TeX Live 2022` ou superior instalado. No entanto, este requisito não se aplica se você for usar a plataforma [Overleaf](https://www.overleaf.com/).
 
-### Windows:
-- `PowerShell` em qualquer versão.
-
-Além disso, intependentemente do sistema operação de uso, você deverá ter o TeX Live 2022 (ou mais) recente instalado. Entretanto, este requisito não se aplica se você quiser utilizar a plataforma do [Overleaf](https://www.overleaf.com/).
-
-## Guia de início rápido:
-Antes de gerar o artigo de demonstração, você precisa obter alguns arquivos essenciais de uma fonte externa. Você pode tanto baixar manualmente os arquivos a partir de links no arquivo `cen_config.ini` e então extraí-los nas pastas `author_files` e `ciencia_e_natura_images`, ou rodar um script disponibilizado neste repositório. Neste caso, há uma série de passos detalhados nos arquivos `download-script.sh` ou `download-script.ps1`, que dependem do seu sistema operacional para execução. 
-
-Para isto, baixe este projeto clicando [aqui](https://github.com/centraldeperiodicos/template_tex_ciencia_e_natura/archive/refs/heads/main.zip) e extraia tudo. Alternativamente, você pode clonar este repositório. Qualquer que seja a opção escolhida, navegue até a pasta `template_tex_ciencia_e_natura` depois disso.
-
-```sh
-$ git clone git@github.com:centraldeperiodicos/template_tex_ciencia_e_natura.git
-$ cd template_tex_ciencia_e_natura
-```
-Deste ponto em diante, siga os passos adequados para seu sistema operacional. Para isto, execute os comandos abaixo no terminal ou no prompt dentro da pasta raiz.
-
-### Distribuições Unix:
-
-Para primeiro uso desse projeto, é necessário tornar o arquivo `download-script.sh` executável.
-
-```sh
-$ chmod +x download-script.sh
-```
-Uma vez feito, execute o script como mostrado:
-```sh
-$ ./download-script.sh
-```
-
-### Windows:
-Apenas execute o PowerShell dessa forma:
-```
-$ PowerShell.exe -ExecutionPolicy Bypass -File ./download-script.ps1
-```
 ### Compilando o PDF:
-Para aqueles que trabalham em máquinas locais utilizando qualquer sistema operacional, utilize os seguintes comands para compilar o PDF.
+Para compilar o PDF em máquinas locais em qualquer sistema operacional, use o seguinte comando. Isso pode ser feito diretamente no terminal/prompt de comando ou configurando seu editor LaTeX adequadamente.
+
 ```
 $ latexmk -pdf paper.tex
 ```
-Se você preferir, utilizar o [Overleaf](https://www.overleaf.com), faça o upload de todos os arquivos, inclusive os baixados pelos scripts e compile o PDF usando seu serviço de plataforma em nuvem.
-
-Qualquer que seja o método escolhido, se tudo ocorrer bem, o arquivo `paper.pdf` aparecerá.
-A partir daqui, tudo que precisará fazer é editar os arquivos para criar sua própria versão do artigo, compilando quantas vezes você precisar.
+Se você preferir usar a [Overleaf](https://www.overleaf.com/), carregue todos os arquivos necessários e compila o PDF usando o serviço cloud da plataforma. Com qualquer um dos métodos, se tudo funcionar corretamente, o arquivo `paper.pdf` estará disponível. A partir deste ponto, tudo o que você precisa fazer é editar os arquivos para criar sua versão do artigo, compilando-o tantas vezes quanto necessário.
 
 ## Submissão:
-Antes de prosseguir com a submissão, revise nossa [Lista de Verificação de Preparação para Submissão](https://periodicos.ufsm.br/cienciaenatura/about/submissions) e forneça todos os arquivos necessários em nossa plataforma, incluindo o arquivo PDF gerado.
-
-Também considere executar o comando a seguir para remover arquivos desnecessários antes de enviar os arquivos para nossa plataforma. Tenha em mente que muitos desses arquivos de log ou arquivos auxiliares são úteis somente na fase de edição do projeto.
+Antes de iniciar a submissão, por favor, consulte nossa [Lista de Verificação de Preparação para Submissão](https://periodicos.ufsm.br/cienciaenatura/about/submissions) e forneça todos os arquivos necessários em nossa plataforma, incluindo o arquivo PDF gerado.
+Considere executar o seguinte comando para remover arquivos desnecessários antes de carregar na nossa plataforma, pois muitos desses arquivos de log ou auxiliares são úteis apenas durante a fase de edição:
 
 ```
 $ latexmk -c
 ```
+## Contribuição:
+Nós apreciamos todos os tipos de contribuições! Se você quiser melhorar a documentação ou corrigir bugs, sinta-se à vontade para abrir um pull request no branch de desenvolvimento. Você também pode consultar nossa [página de contribuições](CONTRIBUITION.md) para obter mais informações.
+
+Se você planeja contribuir adicionando novos recursos ou alterando o template, por favor, abra uma issue e discuta conosco antes. Enviar pull requests deste tipo sem discussão prévia pode gerar rejeição se decidirmos levar o projeto em uma direção diferente da qual você pode estar ciente.
+
 ## License:
 Este projeto está licenciado sob a [Licença Internacional Creative Commons Attribution-NonCommercial-ShareAlike 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/), conforme encontrado no arquivo [LICENSE](./LICENSE).
 
