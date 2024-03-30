@@ -30,6 +30,8 @@ Para compilar o PDF em máquinas locais em qualquer sistema operacional, use o s
 ```
 $ latexmk -pdf paper.tex
 ```
+Além disso, exclusivamente para o ambiente Windows, há um script Batch projetado para compilar o PDF. Para executá-lo, basta clicar duas vezes no arquivo `compile_pdf.bat`.
+
 Se você preferir usar a [Overleaf](https://www.overleaf.com/), carregue todos os arquivos necessários e compila o PDF usando o serviço cloud da plataforma. Com qualquer um dos métodos, se tudo funcionar corretamente, o arquivo `paper.pdf` estará disponível. A partir deste ponto, tudo o que você precisa fazer é editar os arquivos para criar sua versão do artigo, compilando-o tantas vezes quanto necessário.
 
 ## Submissão:
