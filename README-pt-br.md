@@ -10,7 +10,7 @@
     <a href="#sobre">Sobre</a>&nbsp;&nbsp;|&nbsp;
     <a href="#paraautores">Para autores</a>&nbsp;&nbsp;|&nbsp;
     <a href="#contribuição">Contribuição</a>&nbsp;&nbsp;|&nbsp;
-    <a href="#license">License</a>	
+    <a href="#licença">Licença</a>	
     <h2 align="center">Ciência e Natura - Repositório LaTeX</h2>
     <h4 align="center">Universidade Federal de Santa Maria, Campus Sede, Editora Central de Periódicos da UFSM</h4>
 </p>
@@ -44,6 +44,6 @@ Nós apreciamos todos os tipos de contribuições! Se você quiser melhorar a do
 
 Se você planeja contribuir adicionando novos recursos ou alterando o template, por favor, abra uma issue e discuta conosco antes. Enviar pull requests deste tipo sem discussão prévia pode gerar rejeição se decidirmos levar o projeto em uma direção diferente da qual você pode estar ciente.
 
-## License:
+## Licença:
 Este projeto está licenciado sob a [Licença Internacional Creative Commons Attribution-NonCommercial-ShareAlike 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/), conforme encontrado no arquivo [LICENSE](./LICENSE).
 
