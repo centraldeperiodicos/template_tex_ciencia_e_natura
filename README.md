@@ -31,6 +31,8 @@ To compile the PDF on local machines in any operating system, use the following 
 ```
 $ latexmk -pdf paper.tex
 ```
+Furthermore, exclusively for the Windows environment there is a Batch script designed to compile the PDF. To run it, just double-click on the `compile_pdf.bat` file.
+
 If you prefer to use [Overleaf](https://www.overleaf.com), upload all required files and compile the PDF using their cloud-based service.
 With either method, if everything works correctly, the `paper.pdf` file will be available. From this point, all you have to do is edit the files to create your paper version by compiling it as many times as needed.
 
