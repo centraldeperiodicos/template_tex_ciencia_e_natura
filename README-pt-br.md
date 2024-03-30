@@ -19,7 +19,7 @@
 Este repositório contém os arquivos LaTeX essenciais necessários para o processo de submissão ao [periódico da Ciência e Natura](https://periodicos.ufsm.br/cienciaenatura/).
 
 ## Para&nbsp;autores:
-Se você planeja enviar um artigo para nossa revista, por favor, leia as [diretrizes](https://periodicos.ufsm.br/cienciaenatura/about/submissions) e baixe os arquivos essenciais clicando [aqui](https://github.com/centraldeperiodicos/template_tex_ciencia_e_natura/releases/download/2024-001/main-2024-001.zip).
+Se você planeja enviar um artigo para nossa revista, por favor, leia as [diretrizes](https://periodicos.ufsm.br/cienciaenatura/about/submissions) e baixe os arquivos essenciais clicando [aqui](https://github.com/centraldeperiodicos/template_tex_ciencia_e_natura/releases/download/release/main-2024-002.zip).
 
 ### Requisitos:
 Se você deseja criar seu artigo em sua máquina local, deve ter o `TeX Live 2022` ou superior instalado. No entanto, este requisito não se aplica se você for usar a plataforma [Overleaf](https://www.overleaf.com/).
