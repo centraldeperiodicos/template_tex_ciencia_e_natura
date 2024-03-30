@@ -1,5 +1,5 @@
 <p align="center">
-   <img alt="CienciaENaturaLogo" src="https://dl.dropboxusercontent.com/s/2y3obtp1dcg0h0ub3mab6/logo-ciencia-e-natura.jpg?rlkey=77vnaywv3t5oydoiqclnfu736&dl=0" width="70%">
+   <img alt="CienciaENaturaLogo" src="https://dl.dropboxusercontent.com/s/mfizrve2uyx9hu8ci8ldf/ciencia_e_natura.png?rlkey=td68joh9ji0hmqynz1jtiueio&dl=0" width="70%">
     <br>
     <img alt="Issues" src="https://img.shields.io/github/issues/centraldeperiodicos/template_tex_ciencia_e_natura.svg">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/centraldeperiodicos/template_tex_ciencia_e_natura">
@@ -19,7 +19,13 @@
 Este repositório contém os arquivos LaTeX essenciais necessários para o processo de submissão ao [periódico da Ciência e Natura](https://periodicos.ufsm.br/cienciaenatura/).
 
 ## Para&nbsp;autores:
-Se você planeja enviar um artigo para nossa revista, por favor, leia as [diretrizes](https://periodicos.ufsm.br/cienciaenatura/about/submissions) e baixe os arquivos essenciais clicando [aqui](https://github.com/centraldeperiodicos/template_tex_ciencia_e_natura/releases/download/release/main-2024-002.zip).
+Se você planeja enviar um artigo para nossa revista, por favor, leia as [diretrizes](https://periodicos.ufsm.br/cienciaenatura/about/submissions) e baixe os arquivos essenciais clicando no botão a seguir:
+
+<p align="center">
+   <a href="https://github.com/centraldeperiodicos/template_tex_ciencia_e_natura/releases/download/release/main-2024-002.zip">
+      <img alt="CienciaENaturaLogo" src="https://dl.dropboxusercontent.com/s/11m3n0mei8yjrqjpa030s/download_button.svg?rlkey=bckpldci098xfvxbowr64f3bv&dl=0" width="200px">
+   </a>
+</p>
 
 ### Requisitos:
 Se você deseja criar seu artigo em sua máquina local, deve ter o `TeX Live 2022` ou superior instalado. No entanto, este requisito não se aplica se você for usar a plataforma [Overleaf](https://www.overleaf.com/).
