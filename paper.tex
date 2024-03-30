@@ -56,7 +56,7 @@
 \usepackage{pgfplots}
 \usepackage{graphicx}
 %
-\usepackage{amsmath,amsthm,amssymb,amsfonts}
+\usepackage{amsthm,amssymb,amsfonts}
 \usepackage{siunitx}
 %
 \usepackage{booktabs}
@@ -65,6 +65,8 @@
 \usepackage{listings}
 %
 \usepackage{draftwatermark}
+%
+\usepackage[fleqn]{amsmath}
 %
 %----------------------------------------------------------------------------------------
 %	YOUR CONFIGURATIONS
@@ -93,6 +95,7 @@
 %
 \SetWatermarkText{[Fake]}
 \SetWatermarkScale{0.8}
+\setlength{\mathindent}{0pt}
 %
 %----------------------------------------------------------------------------------------
 %	YOUR NEW COMMANDS
@@ -112,9 +115,9 @@
 %
 \cenSection{Chemistry}
 %
-\englishTitle{Exploring the Dynamics of Lightning and its Thermal Effects: Insights from Data Collection and Analysis}
+\englishTitle{Exploring the dynamics of lightning and its thermal effects: Insights from Data collection and analysis}
 %
-\portugueseTitle{Explorando a Dinâmica dos Raios e seus Efeitos Térmicos: Insights a partir da Coleta e Análise de Dados}
+\portugueseTitle{Explorando a dinâmica dos raios e seus efeitos térmicos: Percepções a partir da coleta e análise de dados}
 %
 \author{
   %\authorinfo[ORCID]{NAME}{AFFILIATION},
@@ -168,18 +171,16 @@ In the following sections, we present the experimental setup, data collection me
 %
 \section{Experimental Setup}
 \subsection{The 14-Bis flying vehicle}
-The 14-Bis flying vehicle, an innovative experimental apparatus, features an open cockpit design that offers an unobstructed view for the driver during ascents into the skies to collect data within lightning storms. The vehicle is equipped with a two clicle kerosene fueled motor \citep{Torrens1992} that drives a large propeller, providing efficient propulsion for navigating through turbulent atmospheric conditions \citeapud{Pimenta1987}{Torrens1992}{46}.
+The 14-Bis flying vehicle, an innovative experimental apparatus, features an open cockpit design that offers an unobstructed view for the driver during ascents into the skies to collect data within lightning storms. The vehicle is equipped with a two clicle kerosene fueled motor \citep{Torrens1992} that drives a large propeller, providing efficient propulsion for navigating through turbulent atmospheric conditions \citeapud{Pimenta1987}{Torrens1992}{46}.\par
 %
 \begin{figure}[!h]
   \caption{The 14-bis flying vehicle}
-  \vspace{-3mm} 
-  \begin{center}
-    \includegraphics[bb=0 0 2632 1814, width=0.55\textwidth, trim={0 0 0 0},clip]{author_files/14-bis.jpeg}
-  \end{center}
+  \includegraphics[bb=0 0 2632 1814, width=0.55\textwidth, trim={0 0 0 0},clip]{author_files/14-bis.jpeg}\\
   {\footnotesize
-  Source: Biblioteca Digital Gallica, id btv1b8433366m, Public Domain, availiable on \citep{Beau1907}\\
-  Caption: The 14-bis in its final form, with octagonal-planform interplane ailerons}
-    \label{fig:flying_veicle}
+    Source: Biblioteca Digital Gallica, id btv1b8433366m, Public Domain, availiable on \citep{Beau1907}\\
+    Caption: The 14-bis in its final form, with octagonal-planform interplane ailerons
+  }
+  \label{fig:flying_veicle}
 \end{figure}
 %
 Its streamlined shape is optimized for aerodynamic efficiency, minimizing drag and turbulence to facilitate smooth movement through the air. The veicle incorporates pairs of rigid horizontal structures projecting from both sides, designed to provide stability and support during flight \citep{Wipo}, enabling the driver to maintain control even in the presence of strong winds and atmospheric disturbances.\par
@@ -196,14 +197,11 @@ With its purpose-driven design and reliable motor, the 14-Bis flying vehicle rep
 %
   To determine the temperature of the air surrounding the sensor, the Plumbus Combobulator within the device incorporates a conventional thermometer with hight heat capaciity. The thermometer is strategically positioned on the rear of the 14-bis flying vehicle to measure the air temperature in the vicinity of the sensor. By comparing the temperature of the Schleem-filled sensor and the air temperature measured by the thermometer, we can establish the temperature difference, which is crucial in assessing the impact of the lightning strikes' radiation on the surrounding air.\par
 %
-  The Electroplumbus Nimbodetector undergoes rigorous calibration and validation processes to ensure accurate and reliable measurements. Prior to deployment, the device is calibrated against reference instruments and tested under controlled laboratory conditions to establish its performance characteristics. Special attention is given to the sensitivity, precision, and response time of the sensor and thermometer to ensure the accurate capture of data during lightning strikes.
+  The Electroplumbus Nimbodetector undergoes rigorous calibration and validation processes to ensure accurate and reliable measurements. Prior to deployment, the device is calibrated against reference instruments and tested under controlled laboratory conditions to establish its performance characteristics. Special attention is given to the sensitivity, precision, and response time of the sensor and thermometer to ensure the accurate capture of data during lightning strikes.\par
 %
-
 \begin{figure}[!h]
   \newcommand\x{0.25}
   \caption{The 4th generation of the Electroplumbus Nimbodetector}
-  \begin{center}
-    \vspace{-3mm}
     \begin{minipage}[t]{\x\linewidth}
       \includegraphics[bb=0 0 1024 1024, width = \textwidth, trim={0 0.8cm 0 0.9cm},clip]{author_files/nimbodetector.png}	
       \captionsetup{justification=centering, font=footnotesize}
@@ -214,8 +212,6 @@ With its purpose-driven design and reliable motor, the 14-Bis flying vehicle rep
       \captionsetup{justification=centering, font=footnotesize}
       \caption*{(b)}\label{fig:triangle2b}
     \end{minipage}\\
-  \end{center}%
-  \vspace{-1mm}
   {\footnotesize
   Source: Craiyon website, see \citep{Craiyon}\\
   Caption: The (a) figure displays the core of the device with the Plumbus Combobulator inside and (b) shows the lightning detector filled by enriched Glowing Schleem substance\\
@@ -245,9 +241,7 @@ The  data was sent to the laboratory, and the results are bellow summarized:
 %
 \begin{table}[!h]
 \caption{Branzine levels}
-\vspace{-5mm}
 \footnotesize
-\begin{center}
   \begin{tabular}{@{}lccc@{}}
   \toprule
                                          & altitude & \multicolumn{2}{c}{Branzine levels {$[ppm]$}} \\ \cmidrule(l){3-4} 
@@ -269,11 +263,9 @@ The  data was sent to the laboratory, and the results are bellow summarized:
                                          & $6800\pm 1$       & $-$                &    $1124225 \pm 1000$              \\ 
                                          & $7000\pm 1$       & $-$                &    $6131823 \pm 1000$              \\ 
                                          & $8000\pm 1$       & $-$                &    $9792921 \pm 1000$              \\ \bottomrule
-  \end{tabular}\\[3mm]
-\end{center}
+  \end{tabular}\\
 Caption: The Branzine levels in relation to altitude, over the Atlantic Ocean (August, 1987).\\
-\end{table}
-\vspace{-6mm}
+\end{table}\par
 %
 Upon analyzing the data, it was observed that there is a increase in Branzine levels with increasing altitude. However, the rise remained below $0.2\%$, indicating an insignificant effect on the Plumbus performance. These findings align with prior research \citep{Gagaia1923}, which suggests that Branzine levels typically exhibit a notable increase of over $5\%$ in some conditions such as winter seasons or above the Devil's Triangle ($32\%$).
 %
@@ -289,7 +281,7 @@ According to the Stefan-Boltzmann law, the power radiated by a gray body is prop
 %
 \vspace{-10mm}
 \begin{equation}\label{StefanBoltzmannLaw}
-  j^{\star}=\sigma T^{4}
+j^{\star}=\sigma T^{4}
 \end{equation}
 %
 \noindent where $j^{\star}$ represents the black-body radiant emittance, and $\sigma$ is the Stefan-Boltzmann constant ($\sigma=5.6704\times10^{-8} Wm^{-2}K^{-4}$).
@@ -309,10 +301,7 @@ The analysis of data collected by the Electroplumbus Nimbodetector reveals a sig
 %
 \begin{figure}[!h]
   \caption{Temperature gain as a function of Luminous intensity}
-  \vspace{-3mm} 
-  \begin{center}
-    \includegraphics[bb=0 0 700 524, width=0.85\textwidth, trim={0 0 0 0},clip]{author_files/graph.png}
-  \end{center}
+  \includegraphics[bb=0 0 700 524, width=0.85\textwidth, trim={0 0 0 0},clip]{author_files/graph.png}\\
   {\footnotesize Caption: Each set represents an altitude. The graph shows temperature rise as light intensity intensifies on heavy rain}
   \label{fig:graph}
 \end{figure}
