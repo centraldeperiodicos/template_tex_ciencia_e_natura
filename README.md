@@ -19,7 +19,7 @@
 This repository contains the `LaTeX` version of essential files needed for the submission process to the [Ciência e Natura Journal](https://periodicos.ufsm.br/cienciaenatura/).
 
 ## For&nbsp;authors:
-If you are planning to submit a paper to our journal, please read the [guidelines](https://periodicos.ufsm.br/cienciaenatura/about/submissions) and download the essential files by clicking [here](https://github.com/centraldeperiodicos/template_tex_ciencia_e_natura/releases/download/2024-001/main-2024-001.zip).
+If you are planning to submit a paper to our journal, please read the [guidelines](https://periodicos.ufsm.br/cienciaenatura/about/submissions) and download the essential files by clicking [here](https://github.com/centraldeperiodicos/template_tex_ciencia_e_natura/releases/download/release/main-2024-002.zip).
 
 ### Requirements:
 
