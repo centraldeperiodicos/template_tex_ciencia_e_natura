@@ -22,10 +22,13 @@ Este repositório contém os arquivos LaTeX essenciais necessários para o proce
 Se você planeja enviar um artigo para nossa revista, por favor, leia as [diretrizes](https://periodicos.ufsm.br/cienciaenatura/about/submissions) e baixe os arquivos essenciais clicando no botão a seguir:
 
 <p align="center">
-   <a href="https://github.com/centraldeperiodicos/template_tex_ciencia_e_natura/releases/download/release/main-2024-002.zip">
-      <img alt="CienciaENaturaLogo" src="https://dl.dropboxusercontent.com/s/11m3n0mei8yjrqjpa030s/download_button.svg?rlkey=bckpldci098xfvxbowr64f3bv&dl=0" width="200px">
+   <a href="https://github.com/centraldeperiodicos/template_tex_ciencia_e_natura/releases/download/v-003/main-2024-003.zip">
+      <img alt="CienciaENaturaLogo" src="https://dl.dropboxusercontent.com/s/11m3n0mei8yjrqjpa030s/download_button.svg?rlkey=bckpldci098xfvxbowr64f3bv&dl=0" height="40px">
    </a>
-</p>
+   <a href="https://www.overleaf.com/read/chyyfqqyjhyv#3ce81f">
+      <img alt="CienciaENaturaLogo" src="https://dl.dropboxusercontent.com/s/8oiup9nk3lmd0u3rpzk7n/overleafCeN.png?rlkey=ejw5tkf4vlxe16b5la5avcdkr&st=7r3q1d6p&dl=0" height="40px">
+   </a>
+</p> 
 
 ### Requisitos:
 Se você deseja criar seu artigo em sua máquina local, deve ter o `TeX Live 2022` ou superior instalado. No entanto, este requisito não se aplica se você for usar a plataforma [Overleaf](https://www.overleaf.com/).
