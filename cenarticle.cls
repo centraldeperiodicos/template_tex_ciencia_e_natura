@@ -354,6 +354,12 @@
   }
 }
 
+\newcommand{\boxwrapper}[1]{
+  \setlength{\fboxrule}{1pt}
+  \setlength{\fboxsep}{2pt}
+  \fbox{\hspace{-3pt}#1}\\
+}
+
 \captionsetup{%
   font=normalsize,
   labelfont=normalfont,
