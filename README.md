@@ -21,7 +21,7 @@ This repository contains the `LaTeX` version of essential files needed for the s
 ## For&nbsp;authors:
 If you are planning to submit a paper to our journal, please read the [guidelines](https://periodicos.ufsm.br/cienciaenatura/about/submissions) and download the essential files by clicking on the following button:
 <p align="center">
-   <a href="https://github.com/centraldeperiodicos/template_tex_ciencia_e_natura/releases/download/v-003/main-2024-003.zip">
+   <a href="https://github.com/centraldeperiodicos/template_tex_ciencia_e_natura/releases/download/v-004/main-2024-004.zip">
       <img alt="CienciaENaturaLogo" src="https://dl.dropboxusercontent.com/s/11m3n0mei8yjrqjpa030s/download_button.svg?rlkey=bckpldci098xfvxbowr64f3bv&dl=0" height="40px">
    </a>
    <a href="https://www.overleaf.com/read/chyyfqqyjhyv#3ce81f">
