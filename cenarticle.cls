@@ -68,6 +68,14 @@
 
 \titlespacing*{\subsection}{0pt}{3mm}{3mm}
 \titleformat*{\subsection}{\normalsize\bfseries}
+
+\newcommand{\setdefaultvalues}{
+    \normalsize
+    \setstretch{1.5}
+    \setlength{\parskip}{0pt}
+    \setlength{\parindent}{12.5mm} 
+} 
+
 %
 %----------------------------------------------------------------------------------------
 %	HEADER
@@ -104,8 +112,14 @@
 
 \newcommand{\nEspecial}[1]{
   \ifthenelse{\isempty{#1}}
-    {\def\editioninfo{Ci. e Nat., Santa Maria, v. \volume, \eJournal, \publishYear}}
-    {\def\editioninfo{Ci. e Nat., Santa Maria, v. \volume, n. esp. #1, \eJournal, \publishYear}}
+    {
+     \def\editioninfo{Ci. e Nat., Santa Maria, v. \volume, \eJournal, \publishYear}
+     \def\longeditioninfo{Ciência e Natura, Santa Maria, v. \volume, \eJournal, \publishYear}
+    }
+    {
+     \def\editioninfo{Ci. e Nat., Santa Maria, v. \volume, n. esp. #1, \eJournal, \publishYear}
+     \def\longeditioninfo{Ciência e Natura, Santa Maria, v. \volume, n. esp. #1, \eJournal, \publishYear}
+    }
 }
 
 %
@@ -266,13 +280,19 @@
 
   \newcommand{\howtocite}{
     \vspace{-10mm}
-    \if@english%
+    {\if@english%
       \section*{How to cite this article}%
-    \else%
+      \flushright
+      \else%
       \section*{Como citar este artigo}%
     \fi%
-    \noindent\shortHeaderAuthors~
-    \if@english\englishTitle\else\portugueseTitle\fi. Ciência e Natura, Santa Maria, v.\volume, n. esp. \nEspecial, \publishYear. DOI: \doi.
+    \setdefaultvalues
+    \setstretch{1.0}
+    \shortHeaderAuthors.
+    \if@english\englishTitle\else\portugueseTitle\fi.~\longeditioninfo.
+    DOI:~\doi\par
+    }
+    \setdefaultvalues
   }
 
   \newcommand{\coverpage}{
@@ -311,19 +331,15 @@
     \definecommomfooter
 
     \setupusualheader
-    
-    \normalsize
-    \setstretch{1.5}
-    \setlength{\parskip}{0pt}
-    \setlength{\parindent}{12.5mm} 
+    \setdefaultvalues
   }
 
   \newcounter{authorscounter}
   \setcounter{authorscounter}{1}
 
-  \newcommand{\authorrules}[5]{
+  \newcommand{\authorrules}[5]{ 
     \setlength{\parindent}{0pt}
-    \setstretch{1.2}
+    \setstretch{1.0}
     {
       {\bf\theauthorscounter~--~#1}\\
       {\fontsize{11pt}{0pt}
@@ -346,7 +362,7 @@
   \else
     \section*{Contribuições dos autores}
   \fi  
-  \input{#1}
+  \input{#1} 
 }
 
 \renewcommand{\thefigure}{\arabic{figure}}
