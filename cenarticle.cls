@@ -101,7 +101,13 @@
 \newcommand{\submitionDate}[1]{\def\submitionDate{#1}}
 \newcommand{\approvalDate}[1]{\def\approvalDate{#1}}
 \newcommand{\publishDate}[1]{\def\publishDate{#1}}
-\newcommand{\nEspecial}[1]{\def\nEspecial{#1}}
+
+\newcommand{\nEspecial}[1]{
+  \ifthenelse{\isempty{#1}}
+    {\def\editioninfo{Ci. e Nat., Santa Maria, v. \volume, \eJournal, \publishYear}}
+    {\def\editioninfo{Ci. e Nat., Santa Maria, v. \volume, n. esp. #1, \eJournal, \publishYear}}
+}
+
 %
 \newcommand{\cncoverheader}{
  \noindent\begin{tikzpicture}[overlay]
@@ -113,7 +119,7 @@
       \node[left, anchor=east, inner sep = 0mm] at (\textwidth, 1.5mm) {\includegraphics[bb=0 0 454 97, height=4.5mm]{\openacessfile}};
 
       \draw[line width=1.0pt, cncolor] (-20mm, -1.5mm) -- (\paperwidth, -1.5mm);
-      \draw node[anchor=north, inner sep=2.5mm] at (\textwidth / 2, 0) {\fontsize{8pt}{2pt}\selectfont  Ci. e Nat., Santa Maria, v. \volume, n. esp. \nEspecial, \eJournal, \publishYear \textbullet~\doi};
+      \draw node[anchor=north, inner sep=2.5mm] at (\textwidth / 2, 0) {\fontsize{8pt}{2pt}\selectfont \editioninfo~\textbullet~\doi};
       \node[anchor=north, inner sep=2mm, yshift=-4.5mm] at (\textwidth / 2, 0) {\fontsize{8pt}{2pt}\selectfont \submittedtext: \submitionDate~\textbullet~\approvedtext: \approvalDate~\textbullet~\publishedtext: \publishDate};
       \draw[line width=1.0pt, cncolor] (-20mm, -10.0mm) -- (\paperwidth, -10mm);
     \end{scope}
@@ -254,7 +260,7 @@
   \newcommand{\definecommomfooter}{
     \fancyfoot{} % Blank out the default footer
     \fancyfoot[C]{{\color{cncolor}\rule{90mm}{1.0pt}}\\[-3pt]{
-      \fontsize{9pt}{0pt}\selectfont Ci. e Nat., Santa Maria, v.\volume, n. esp.\nEspecial, \eJournal, \publishYear}
+	    \fontsize{9pt}{0pt}\selectfont \editioninfo}
     }
   }
 
