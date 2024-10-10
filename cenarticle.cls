@@ -118,7 +118,7 @@
     }
     {
      \def\editioninfo{Ci. e Nat., Santa Maria, v. \volume, n. esp. #1, \eJournal, \publishYear}
-     \def\longeditioninfo{Ciência e Natura, Santa Maria, v. \volume, n. esp. #1, \eJournal, \publishYear}
+     \def\longeditioninfo{Ciência e Natura, Santa Maria, v. \volume, esp. #1, \eJournal, \publishYear}
     }
 }
 
@@ -280,17 +280,17 @@
 
   \newcommand{\howtocite}{
     \vspace{-10mm}
+    \setstretch{1.0}
     {\if@english%
       \section*{How to cite this article}%
-      \flushright
+      \hangindent=12.5mm
+      \hangafter=1
+      \shortHeaderAuthors,~\englishTitle.~\longeditioninfo.~\doi\par
       \else%
       \section*{Como citar este artigo}%
+      \shortHeaderAuthors,~\portugueseTitle.~\longeditioninfo.~\doi\par
     \fi%
     \setdefaultvalues
-    \setstretch{1.0}
-    \shortHeaderAuthors.
-    \if@english\englishTitle\else\portugueseTitle\fi.~\longeditioninfo.
-    DOI:~\doi\par
     }
     \setdefaultvalues
   }
@@ -378,7 +378,7 @@
 
 \newcommand{\boxwrapper}[1]{
   \setlength{\fboxrule}{1pt}
-  \setlength{\fboxsep}{2pt}
+  \setlength{\fboxsep}{0pt}
   \fbox{\hspace{-3pt}#1}\\
 }
 
