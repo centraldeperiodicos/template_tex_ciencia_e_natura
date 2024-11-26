@@ -1,7 +1,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 % Ciência e Natura LaTeX Document
-% Version 2.0 (2024/02/09)
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% !! ATTENTION !! %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -71,11 +70,10 @@
 %
 \usepackage[fleqn]{amsmath}
 %
-	%----------------------------------------------------------------------------------------
+%----------------------------------------------------------------------------------------
 %	YOUR CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 %
-\sisetup{math-micro=\text{µ},text-micro=µ}
 %
 \lstset{language=Fortran,
     basicstyle=\footnotesize\ttfamily,
@@ -95,6 +93,8 @@
     firstnumber=1,
     morekeywords={program, end, subroutine, end subroutine, if, then, else, endif, do, enddo, real, integer, logical, dimension, allocatable, intent, call}
 }
+%
+\pgfplotsset{compat=1.18}
 %
 \SetWatermarkText{[Draft]}
 \SetWatermarkScale{0.8}

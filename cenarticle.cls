@@ -30,6 +30,7 @@
 \fi
 %
 \RequirePackage[default,scale=1.00]{opensans}
+
 \RequirePackage{microtype}
 
 \RequirePackage{xcolor}
@@ -43,7 +44,6 @@
 \RequirePackage{titling}
 \RequirePackage{fontawesome5}
 \RequirePackage{xifthen}
-\RequirePackage[hidelinks]{hyperref}
 
 \RequirePackage{fancyhdr} % Headers and footers
 
@@ -54,6 +54,9 @@
 \RequirePackage{titlesec}
 
 \RequirePackage{caption}
+
+\RequirePackage[hidelinks]{hyperref}
+
 
 \RequirePackage[fleqn]{amsmath}
 \setlength{\mathindent}{0pt}
@@ -75,6 +78,8 @@
     \setlength{\parskip}{0pt}
     \setlength{\parindent}{12.5mm} 
 } 
+
+\renewcommand{\textbar}{\(|\)}
 
 %
 %----------------------------------------------------------------------------------------
@@ -207,6 +212,17 @@
 %
 \newcommand{\shortHeaderTitle}[1]{\def\shortHeaderTitle{#1}}
 \newcommand{\shortHeaderAuthors}[1]{\def\shortHeaderAuthors{#1}}
+
+\setlength{\bibsep}{1em}
+\AtBeginDocument{
+	\if@english
+		\renewcommand\bibname{REFERENCE}
+		\renewcommand\refname{REFERENCE}
+	\else
+		\renewcommand\bibname{REFERÊNCIA}
+		\renewcommand\refname{REFERÊNCIA}
+	\fi
+}
 
 \if@english
   \bibliographystyle{apalike}
