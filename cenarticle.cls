@@ -213,6 +213,12 @@
 \newcommand{\shortHeaderTitle}[1]{\def\shortHeaderTitle{#1}}
 \newcommand{\shortHeaderAuthors}[1]{\def\shortHeaderAuthors{#1}}
 
+\let\oldbibliography\bibliography
+\renewcommand{\bibliography}[1]{
+  \interlinepenalty=10000
+  \oldbibliography{#1}
+}
+
 \setlength{\bibsep}{1em}
 \AtBeginDocument{
 	\if@english
